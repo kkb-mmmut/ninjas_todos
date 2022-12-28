@@ -4,7 +4,7 @@ Todo list app
 
 A todo list app
 
-#https://kkb-mmmut.github.io/todo_list/
+#https://kkb-mmmut.github.io/ninjas_todos/
 General steps to follow when creating a project
 
     Thinking about the UI
