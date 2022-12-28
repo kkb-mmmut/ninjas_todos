@@ -1,0 +1,249 @@
+* {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+@font-face {
+  font-family: 'Rocher';
+  src: url(https://assets.codepen.io/9632/RocherColorGX.woff2);
+}
+body {
+  background-position: relative;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat; 
+  background-color: #cecece;
+}
+/* //header Styles */
+h1 {
+  font-family: 'Rocher';
+  color: #2a2929;
+  font-weight: 900;
+  text-shadow: 2px 2px 10px rgb(8, 0, 0);
+  letter-spacing: 4px;
+} 
+/* container section */
+#container {
+  width: 700px;
+  height: 450px;
+  margin: 0 auto;
+  border: 2px solid #c6c6c6;
+  border-radius: 20px;
+  padding: 10px;
+  color: rgb(61, 61, 61);
+  background-color:rgb(255, 255, 255); 
+  /* background-image: repeating-linear-gradient(
+    to top left,
+    rgba(58, 4, 4, 0.561),
+    rgba(152, 112, 18, 0.5) 3px
+  ); */
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+} 
+/* inputbox styles */
+#container input {
+  /* border:3px solid #0079bf; */
+  border-radius: 15px;
+  padding-left:50px;
+  height:70px;
+  /* box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px; */
+  background-color: rgb(217, 214, 214);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+/* input box plceholder styles */
+#input-placeholder-icon{
+  position: absolute;
+  margin-left: 15px; 
+  height: 70px;
+  width: 55px;
+  display: flex;
+  align-items: center;
+} 
+
+/* List Items Section  */
+
+#list-item {
+  height: 70%;
+  overflow: scroll;
+  border-top: 1px solid rgb(88, 88, 88);
+  border-bottom: 1px solid rgb(88, 88, 88);
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  /* border: 1px solid #e5e5e5; */
+}
+ul li {
+  padding: 10px;
+  /* padding-left: 0; */
+  display: flex;
+  justify-content: space-between;
+  align-items: inherit;
+  align-items: center;
+}
+ul li:hover {
+  /* background: #f3f3f3; */
+  /* background-color: #384852a0; */
+  text-decoration: none;
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+#list input {
+  padding: 0;
+  height: initial;
+  width: initial;
+  margin-bottom: 0;
+  display: none;
+  cursor: pointer;
+}
+
+#list label {
+  position: relative;
+  cursor: pointer;
+}
+
+#list label:before {
+  content: "";
+  /* -webkit-appearance: none; */
+  background-color: transparent;
+  border: 2px solid #0079bf;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05),
+    inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+  padding: 10px;
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  cursor: pointer;
+  margin-right: 10px;
+}
+#list input:checked + label:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 2px;
+  left: 9px;
+  width: 6px;
+  height: 14px;
+  border: solid #fff;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+#list input:checked + label:before {
+  background: #0079bf;
+}
+#list input:checked + label {
+  text-decoration: line-through;
+}
+.delete {
+  height: 28px;
+  padding: 5px 0px;
+  border-radius: 3px;
+}
+.delete:hover {
+  background: #f2f2f2;
+  cursor: pointer;
+}
+h1 {
+  text-align: center;
+}
+
+/* adding tasks */
+.add-task {
+  width: 100%;
+  outline: none;
+  font-size: 15px;
+  padding: 11px;
+  border: 1px solid #f3f3f3;
+  margin-bottom: 3px;
+}
+
+/* Total Tasks Label  */
+#total-tasks {
+  margin-bottom: 20px;
+  font-size: 13px;
+  margin-left: 2px;
+  color: rgb(88, 88, 88);
+  text-shadow: 2px 2px 10px white;
+  font-weight: 800;
+}
+ 
+/* complete tasks label  */
+#complete-tasks { 
+  margin-bottom: 20px;
+  font-size: 13px; 
+  margin-left: 10px;
+  color: rgb(88, 88, 88);
+  text-shadow: 2px 2px 10px white;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+/* remaining tasks label  */
+#remaining-tasks {
+  font-size: 13px;
+  margin-left: 2px;
+  color: rgb(88, 88, 88);
+  text-shadow: 2px 2px 10px white;
+  font-weight: 800;
+}
+
+/* completed tasks */
+#completed-tasks {
+  font-size: 13px;
+  margin-left: 2px;
+  color: rgb(88, 88, 88);
+  text-shadow: 2px 2px 10px white;
+  font-weight: 800;
+}
+
+/* Show all tasks label  */
+#label-all{
+  float: right;
+  font-size: 13px;
+  margin-left: 2px;
+  color:rgb(88, 88, 88);
+  text-shadow: 2px 2px 10px white;
+  font-weight: 800;
+}
+ /* Show all complete tasks label  */
+#label-complete{
+  float: right;
+  font-size: 13px;
+  margin-left: 2px;
+  color:rgb(88, 88, 88);
+  text-shadow: 2px 2px 10px white;
+  font-weight: 800;
+}
+/* Show all uncomplete tasks label  */
+#label-uncomplete{
+  float: right;
+  font-size: 13px;
+  margin-left: 2px;
+  color:rgb(88, 88, 88);
+  text-shadow: 2px 2px 10px white;
+  font-weight: 800;
+}
+
+/* Delete completed tasks label  */
+#delete-completed-tasks{
+  float: right;
+  font-size: 13px;
+  margin-left: 2px;
+  color:rgb(88, 88, 88);
+  text-shadow: 2px 2px 10px white;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+/* handling all hover function and cursor functionalities */
+#delete-completed-tasks:hover,#complete-tasks:hover{ 
+  color:rgb(211, 6, 6) ; 
+}
+#label-all,#label-complete,#label-uncomplete{ 
+  cursor: pointer;
+}
+#label-all:hover,#label-complete:hover,#label-uncomplete:hover{ 
+  color:rgb(211, 6, 6) !important; 
+}
+
+/* that's all ::
+Made by :Kamlesh Kumar Bind 
+kkb.mmmut@gmail.com */

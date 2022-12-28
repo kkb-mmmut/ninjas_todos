@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Todo List</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1 clas="heading">Ninja's Todos</h1>
+    
+    <div id="container"> 
+      <span id="input-placeholder-icon">
+        <i class="fa fa-list" aria-hidden="true"></i>
+      </span>
+      <input
+        placeholder="Add a task"
+        class="add-task"
+        id="add"
+        data-helloWord="asdasdas"
+      />
+      <span id="total-tasks"
+        >Total tasks: <span id="tasks-counter">0</span></span
+      >
+      <span id="complete-tasks" class="completeAll"> &#10004;Complete all!</span>
+      <span id="delete-completed-tasks" class="deleteAll">Delete all Completed!</span>
+      <div id="list-item">
+        <ul id="list">
+          <!-- <li>
+          <input type="checkbox" id="task1" data-id="12" class="custom-checkbox">
+          <label for="task1">Buy groceries</label>
+          <img src="bin.svg" class="delete" data-id="12" />
+        </li> -->
+        </ul>
+      </div>
+      <span id="remaining-tasks"
+        >Remaining tasks:<span id="remaining-task">0</span></span
+      >
+      <span id="completed-tasks"
+        >Completed:<span id="done-tasks-counter">0 </span></span
+      >
+      <span id="label-uncomplete" class="uncomplete">Uncomplete &nbsp;</span>
+      <span id="label-complete" class="complete">Completed &nbsp;&nbsp;</span>
+      <span id="label-all" class="all">All &nbsp;&nbsp;</span>
+    </div>
+    <script src="todo.js"></script>
+  </body>
+</html>
