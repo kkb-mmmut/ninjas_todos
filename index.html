@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+<!--   Heading Section -->
   <head>
     <title>Todo List</title>
     <link rel="icon" type="image/x-icon" href="favicon.ico" />
@@ -10,6 +11,7 @@
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
     <link rel="stylesheet" href="style.css" />
   </head>
+<!--   Body SEction -->
   <body>
     <h1 clas="heading">Ninja's Todos</h1>
     
@@ -28,6 +30,7 @@
       >
       <span id="complete-tasks" class="completeAll"> &#10004;Complete all!</span>
       <span id="delete-completed-tasks" class="deleteAll">Delete all Completed!</span>
+<!--       List of the item to be appended in the list should be here  -->
       <div id="list-item">
         <ul id="list">
           <!-- <li>
@@ -37,16 +40,20 @@
         </li> -->
         </ul>
       </div>
+<!--       Remaining Task Label Section to show the remaining tasks  -->
       <span id="remaining-tasks"
         >Remaining tasks:<span id="remaining-task">0</span></span
       >
+<!--       Completed Tasks label section to show the completed tasks  -->
       <span id="completed-tasks"
         >Completed:<span id="done-tasks-counter">0 </span></span
       >
+<!-- Navigation buttons bars to navigate through the all the completed , uncompleted tasks.  -->
       <span id="label-uncomplete" class="uncomplete">Uncomplete &nbsp;</span>
       <span id="label-complete" class="complete">Completed &nbsp;&nbsp;</span>
       <span id="label-all" class="all">All &nbsp;&nbsp;</span>
     </div>
+<!--     Javascript file included -->
     <script src="todo.js"></script>
   </body>
 </html>
